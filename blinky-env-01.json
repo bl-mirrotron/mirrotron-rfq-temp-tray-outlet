@@ -1,21 +1,121 @@
 {
-  "deviceType": "blinky-basic",
+  "deviceType": "blinky-env",
   "name": "01",
   "arcPeriod": 60000,
   "timeStamp": 1610962831200,
   "lastArchive": 1610962777220,
-  "ledState": {
-    "action": "reading",
+  "loopDelay": {
+    "action": "setting",
     "type": "scalar",
-    "value": 0,
+    "value": 1000,
     "unit": "unit",
     "alarm": {
       "value": 0,
       "limits": {
-        "lolo": -2,
-        "low": -1,
-        "high": 2,
-        "hihi": 3
+        "lolo": 0,
+        "low": 0,
+        "high": 20000,
+        "hihi": 30000
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "temperature1": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 20,
+    "unit": "C",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 0,
+        "low": 1,
+        "high": 100,
+        "hihi": 101
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "temperature2": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 25.4,
+    "unit": "C",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 0,
+        "low": 1,
+        "high": 100,
+        "hihi": 101
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "temperature3": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 25.2,
+    "unit": "C",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 0,
+        "low": 1,
+        "high": 100,
+        "hihi": 101
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "humidity": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 48,
+    "unit": "%",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 0,
+        "low": 1,
+        "high": 100,
+        "hihi": 101
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "moisture": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 11,
+    "unit": "%",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 0,
+        "low": 1,
+        "high": 100,
+        "hihi": 101
       },
       "notify": {
         "name": "",
@@ -56,66 +156,6 @@
         "low": -60,
         "high": 0,
         "hihi": 30
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "ledOn": {
-    "action": "setting",
-    "type": "scalar",
-    "value": 0,
-    "unit": "unit",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -2,
-        "low": -1,
-        "high": 2,
-        "hihi": 3
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "ledToggle": {
-    "action": "setting",
-    "type": "scalar",
-    "value": 0,
-    "unit": "unit",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -2,
-        "low": -1,
-        "high": 2,
-        "hihi": 3
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "loopDelay": {
-    "action": "setting",
-    "type": "scalar",
-    "value": 1000,
-    "unit": "unit",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 0,
-        "low": 0,
-        "high": 20000,
-        "hihi": 30000
       },
       "notify": {
         "name": "",
