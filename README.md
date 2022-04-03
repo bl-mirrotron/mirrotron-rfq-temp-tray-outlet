@@ -1,13 +1,14 @@
-# blinky-env tray
+# blinky-bus-tray
 ## need to add .env file with the following
-PROJECT=blinky-lite-v2   
-MQTTDEVICEA=blinky-lite-v2/blinky-env/01/+  
-MQTTDEVICEB=blinky-lite-v2/blinky-env/02/+  
-MQTTCLIENTID=blinky-env-tray-01  
-MQTTSERVERIP=xxxxx.yyyyy.com  
-MQTTUSERNAME=xxx  
-MQTTPASSWORD=yyy  
-NODEREDCONFIGSECRET=zzz  
+MQTTSUBSCRIBE=blinky-lite-v4/blinky-bus/01/setting/#  
+MQTTCLIENTID=blinky-bus-tray-01  
+MQTTSERVERIP=something.cloudmqtt.com  
+MQTTUSERNAME=xxxx  
+MQTTPASSWORD=yyyy  
+SERIALPORT=/dev/ttyACM3  
+SERIALBUFSIZE=8  
+PM2NAME=blinky-bus  
+NODEREDCONFIGSECRET=a-secret-key    
 
 with no CR after the last line
 
