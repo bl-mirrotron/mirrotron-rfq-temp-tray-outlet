@@ -1,13 +1,13 @@
-# blinky-bus-tray
+# mirrtron-rfq-temp-tray
 ## need to add .env file with the following
-MQTTSUBSCRIBE=blinky-lite-v4/blinky-bus/01/setting/#  
-MQTTCLIENTID=blinky-bus-tray-01  
+MQTTSUBSCRIBE=mirrotron/rfq-temp/01/setting/#  
+MQTTCLIENTID=mirrtron-rfq-temp-tray-01  
 MQTTSERVERIP=something.cloudmqtt.com  
 MQTTUSERNAME=xxxx  
 MQTTPASSWORD=yyyy  
 SERIALPORT=/dev/ttyACM3  
-SERIALBUFSIZE=8  
-PM2NAME=blinky-bus  
+SERIALBUFSIZE=22  
+PM2NAME=mirrtron-rfq-temp-01   
 NODEREDCONFIGSECRET=a-secret-key    
 
 with no CR after the last line
