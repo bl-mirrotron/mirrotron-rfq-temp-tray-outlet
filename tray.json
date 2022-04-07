@@ -1,18 +1,58 @@
 {
-  "type": "blinky-env",
+  "type": "rfq-temp",
   "name": "01",
   "arcPeriod": 60000,
-  "timeStamp": 1649012922671,
-  "temperature1": {
+  "timeStamp": 1649328117627,
+  "interval": {
+    "action": "setting",
+    "type": "scalar",
+    "value": 10000,
+    "unit": "mS",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 1000,
+        "low": 3000,
+        "high": 80000,
+        "hihi": 90000
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "watchdog": {
     "action": "reading",
     "type": "scalar",
-    "value": 23,
+    "value": 10024,
+    "unit": "unit",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": -1,
+        "low": 0,
+        "high": 40000,
+        "hihi": 50000
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "temp1": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 0,
     "unit": "C",
     "alarm": {
       "value": 0,
       "limits": {
-        "lolo": 0,
-        "low": 1,
+        "lolo": -101,
+        "low": -100,
         "high": 100,
         "hihi": 101
       },
@@ -23,16 +63,16 @@
       }
     }
   },
-  "temperature2": {
+  "temp2": {
     "action": "reading",
     "type": "scalar",
-    "value": 21.8,
+    "value": 22.3,
     "unit": "C",
     "alarm": {
       "value": 0,
       "limits": {
-        "lolo": 0,
-        "low": 1,
+        "lolo": -101,
+        "low": -100,
         "high": 100,
         "hihi": 101
       },
@@ -43,16 +83,16 @@
       }
     }
   },
-  "temperature3": {
+  "temp3": {
     "action": "reading",
     "type": "scalar",
-    "value": 22,
+    "value": 23.4,
     "unit": "C",
     "alarm": {
       "value": 0,
       "limits": {
-        "lolo": 0,
-        "low": 1,
+        "lolo": -101,
+        "low": -100,
         "high": 100,
         "hihi": 101
       },
@@ -63,16 +103,16 @@
       }
     }
   },
-  "humidity": {
+  "temp4": {
     "action": "reading",
     "type": "scalar",
-    "value": 40,
-    "unit": "%",
+    "value": 22.5,
+    "unit": "C",
     "alarm": {
       "value": 0,
       "limits": {
-        "lolo": 0,
-        "low": 1,
+        "lolo": -101,
+        "low": -100,
         "high": 100,
         "hihi": 101
       },
@@ -83,16 +123,76 @@
       }
     }
   },
-  "moisture": {
+  "temp5": {
     "action": "reading",
     "type": "scalar",
-    "value": 40,
-    "unit": "%",
+    "value": 0,
+    "unit": "C",
     "alarm": {
       "value": 0,
       "limits": {
-        "lolo": 0,
-        "low": 1,
+        "lolo": -101,
+        "low": -100,
+        "high": 100,
+        "hihi": 101
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "temp6": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 0,
+    "unit": "C",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": -101,
+        "low": -100,
+        "high": 100,
+        "hihi": 101
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "temp7": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 0,
+    "unit": "C",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": -101,
+        "low": -100,
+        "high": 100,
+        "hihi": 101
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "temp8": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 22.2,
+    "unit": "C",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": -101,
+        "low": -100,
         "high": 100,
         "hihi": 101
       },
