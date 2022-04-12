@@ -1,32 +1,12 @@
 {
   "type": "rfq-temp",
-  "name": "01",
+  "name": "02",
   "arcPeriod": 60000,
-  "timeStamp": 1649339731686,
-  "interval": {
-    "action": "setting",
-    "type": "scalar",
-    "value": 10000,
-    "unit": "mS",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 1000,
-        "low": 3000,
-        "high": 80000,
-        "hihi": 90000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
+  "timeStamp": 1649768400276,
   "watchdog": {
     "action": "reading",
     "type": "scalar",
-    "value": 279,
+    "value": 63,
     "unit": "unit",
     "alarm": {
       "value": 0,
@@ -46,7 +26,7 @@
   "temp1": {
     "action": "reading",
     "type": "scalar",
-    "value": 0,
+    "value": 19.3,
     "unit": "C",
     "alarm": {
       "value": 0,
@@ -66,7 +46,7 @@
   "temp2": {
     "action": "reading",
     "type": "scalar",
-    "value": 22.5,
+    "value": 19.5,
     "unit": "C",
     "alarm": {
       "value": 0,
@@ -86,7 +66,7 @@
   "temp3": {
     "action": "reading",
     "type": "scalar",
-    "value": 23.6,
+    "value": 19.3,
     "unit": "C",
     "alarm": {
       "value": 0,
@@ -106,87 +86,7 @@
   "temp4": {
     "action": "reading",
     "type": "scalar",
-    "value": 22.5,
-    "unit": "C",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "temp5": {
-    "action": "reading",
-    "type": "scalar",
-    "value": 0,
-    "unit": "C",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "temp6": {
-    "action": "reading",
-    "type": "scalar",
-    "value": 0,
-    "unit": "C",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "temp7": {
-    "action": "reading",
-    "type": "scalar",
-    "value": 0,
-    "unit": "C",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "temp8": {
-    "action": "reading",
-    "type": "scalar",
-    "value": 22.4,
+    "value": 19.5,
     "unit": "C",
     "alarm": {
       "value": 0,
