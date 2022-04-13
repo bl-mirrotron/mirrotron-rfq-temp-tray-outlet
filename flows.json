@@ -1211,7 +1211,8 @@
         "y": 640,
         "wires": [
             [
-                "352395cfbb5c4259"
+                "352395cfbb5c4259",
+                "5b15410a7e346057"
             ]
         ]
     },
@@ -1619,7 +1620,7 @@
         "z": "85e21fcb925ef32f",
         "g": "cc88dacde90c32cd",
         "name": "Create Readings",
-        "func": "var tray = global.get('tray');\nvar newData = false;\nvar watchdog = context.get('watchdog');\nif (msg.payload[10] != watchdog)\n{\n    tray.temp1.value        = msg.payload[1] / 10;\n    tray.temp2.value        = msg.payload[2] / 10;\n    tray.temp3.value        = msg.payload[3] / 10;\n    tray.temp4.value        = msg.payload[4] / 10;\n    tray.watchdog.value     = msg.payload[5];\n    context.set('watchdog',tray.watchdog.value);\n    newData = true;\n}\nreturn  {topic:msg.topic, payload:newData}\n",
+        "func": "var tray = global.get('tray');\nvar newData = false;\nvar watchdog = context.get('watchdog');\nif (msg.payload[9] != watchdog)\n{\n    tray.temp1.value        = msg.payload[1] / 10;\n    tray.temp2.value        = msg.payload[2] / 10;\n    tray.temp3.value        = msg.payload[3] / 10;\n    tray.temp4.value        = msg.payload[4] / 10;\n    tray.temp5.value        = msg.payload[5] / 10;\n    tray.temp6.value        = msg.payload[6] / 10;\n    tray.temp7.value        = msg.payload[7] / 10;\n    tray.temp8.value        = msg.payload[8] / 10;\n    tray.watchdog.value     = msg.payload[9];\n    context.set('watchdog',tray.watchdog.value);\n    newData = true;\n}\nreturn  {topic:msg.topic, payload:newData}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('watchdog',0);",
@@ -1731,6 +1732,22 @@
         ],
         "x": 1055,
         "y": 640,
+        "wires": []
+    },
+    {
+        "id": "5b15410a7e346057",
+        "type": "debug",
+        "z": "85e21fcb925ef32f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 580,
         "wires": []
     }
 ]
