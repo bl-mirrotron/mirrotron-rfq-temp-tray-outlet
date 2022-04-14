@@ -1,12 +1,12 @@
 {
   "type": "rfq-temp",
-  "name": "02",
+  "name": "outlet",
   "arcPeriod": 60000,
-  "timeStamp": 1649848413958,
+  "timeStamp": 1649930333606,
   "watchdog": {
     "action": "reading",
     "type": "scalar",
-    "value": 6,
+    "value": 4405,
     "unit": "unit",
     "alarm": {
       "value": 0,
@@ -23,10 +23,10 @@
       }
     }
   },
-  "temp1": {
+  "left": {
     "action": "reading",
     "type": "scalar",
-    "value": 20.3,
+    "value": 20.1,
     "unit": "C",
     "alarm": {
       "value": 0,
@@ -43,10 +43,10 @@
       }
     }
   },
-  "temp2": {
+  "top": {
     "action": "reading",
     "type": "scalar",
-    "value": 20.3,
+    "value": 19.8,
     "unit": "C",
     "alarm": {
       "value": 0,
@@ -63,7 +63,7 @@
       }
     }
   },
-  "temp3": {
+  "bottom": {
     "action": "reading",
     "type": "scalar",
     "value": 20.2,
@@ -83,90 +83,10 @@
       }
     }
   },
-  "temp4": {
+  "right": {
     "action": "reading",
     "type": "scalar",
-    "value": 20.3,
-    "unit": "C",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "temp5": {
-    "action": "reading",
-    "type": "scalar",
-    "value": 0,
-    "unit": "C",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "temp6": {
-    "action": "reading",
-    "type": "scalar",
-    "value": 0,
-    "unit": "C",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "temp7": {
-    "action": "reading",
-    "type": "scalar",
-    "value": 0,
-    "unit": "C",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "temp8": {
-    "action": "reading",
-    "type": "scalar",
-    "value": 20,
+    "value": 19.9,
     "unit": "C",
     "alarm": {
       "value": 0,
