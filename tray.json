@@ -2,11 +2,11 @@
   "type": "rfq-temp",
   "name": "outlet",
   "arcPeriod": 60000,
-  "timeStamp": 1649930333606,
+  "timeStamp": 1656406499193,
   "watchdog": {
     "action": "reading",
     "type": "scalar",
-    "value": 4405,
+    "value": 31280,
     "unit": "unit",
     "alarm": {
       "value": 0,
@@ -26,15 +26,15 @@
   "left": {
     "action": "reading",
     "type": "scalar",
-    "value": 20.1,
+    "value": 27.3,
     "unit": "C",
     "alarm": {
-      "value": 0,
+      "value": 4,
       "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
+        "lolo": 15,
+        "low": 18,
+        "high": 22,
+        "hihi": 25
       },
       "notify": {
         "name": "",
@@ -46,15 +46,15 @@
   "top": {
     "action": "reading",
     "type": "scalar",
-    "value": 19.8,
+    "value": 26.7,
     "unit": "C",
     "alarm": {
-      "value": 0,
+      "value": 4,
       "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
+        "lolo": 15,
+        "low": 18,
+        "high": 22,
+        "hihi": 25
       },
       "notify": {
         "name": "",
@@ -66,15 +66,15 @@
   "bottom": {
     "action": "reading",
     "type": "scalar",
-    "value": 20.2,
+    "value": 27,
     "unit": "C",
     "alarm": {
-      "value": 0,
+      "value": 4,
       "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
+        "lolo": 15,
+        "low": 18,
+        "high": 22,
+        "hihi": 25
       },
       "notify": {
         "name": "",
@@ -86,15 +86,35 @@
   "right": {
     "action": "reading",
     "type": "scalar",
-    "value": 19.9,
+    "value": 27.1,
     "unit": "C",
     "alarm": {
-      "value": 0,
+      "value": 4,
       "limits": {
-        "lolo": -101,
-        "low": -100,
-        "high": 100,
-        "hihi": 101
+        "lolo": 15,
+        "low": 18,
+        "high": 22,
+        "hihi": 25
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "permit": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 0,
+    "unit": "",
+    "alarm": {
+      "value": 3,
+      "limits": {
+        "lolo": 0,
+        "low": 0,
+        "high": 2,
+        "hihi": 2
       },
       "notify": {
         "name": "",
