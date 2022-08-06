@@ -2,11 +2,11 @@
   "type": "rfq-temp",
   "name": "outlet",
   "arcPeriod": 60000,
-  "timeStamp": 1656406499193,
+  "timeStamp": 1659769447524,
   "watchdog": {
     "action": "reading",
     "type": "scalar",
-    "value": 31280,
+    "value": 7004,
     "unit": "unit",
     "alarm": {
       "value": 0,
@@ -26,10 +26,10 @@
   "left": {
     "action": "reading",
     "type": "scalar",
-    "value": 27.3,
+    "value": 20.1,
     "unit": "C",
     "alarm": {
-      "value": 4,
+      "value": 0,
       "limits": {
         "lolo": 15,
         "low": 18,
@@ -46,10 +46,10 @@
   "top": {
     "action": "reading",
     "type": "scalar",
-    "value": 26.7,
+    "value": 20.3,
     "unit": "C",
     "alarm": {
-      "value": 4,
+      "value": 0,
       "limits": {
         "lolo": 15,
         "low": 18,
@@ -66,10 +66,10 @@
   "bottom": {
     "action": "reading",
     "type": "scalar",
-    "value": 27,
+    "value": 21.1,
     "unit": "C",
     "alarm": {
-      "value": 4,
+      "value": 0,
       "limits": {
         "lolo": 15,
         "low": 18,
@@ -86,10 +86,10 @@
   "right": {
     "action": "reading",
     "type": "scalar",
-    "value": 27.1,
+    "value": 21,
     "unit": "C",
     "alarm": {
-      "value": 4,
+      "value": 0,
       "limits": {
         "lolo": 15,
         "low": 18,
@@ -106,10 +106,10 @@
   "permit": {
     "action": "reading",
     "type": "scalar",
-    "value": 0,
+    "value": 1,
     "unit": "",
     "alarm": {
-      "value": 3,
+      "value": 0,
       "limits": {
         "lolo": 0,
         "low": 0,

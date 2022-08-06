@@ -2,7 +2,7 @@
     {
         "id": "85e21fcb925ef32f",
         "type": "tab",
-        "label": "blinky-bus-tray",
+        "label": "mirrotron-rfq-temp-tray-outlet",
         "disabled": false,
         "info": ""
     },
@@ -595,11 +595,16 @@
                 "t": "eq",
                 "v": "reset",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "postMortem",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 4,
+        "outputs": 5,
         "x": 650,
         "y": 200,
         "wires": [
@@ -614,6 +619,9 @@
             ],
             [
                 "72b5ca0e2043aba0"
+            ],
+            [
+                "c46d6be821edc61a"
             ]
         ]
     },
@@ -1751,5 +1759,42 @@
                 "99fbe8135d0ce161"
             ]
         ]
+    },
+    {
+        "id": "c46d6be821edc61a",
+        "type": "function",
+        "z": "85e21fcb925ef32f",
+        "name": "PostMortem",
+        "func": "var trayCopy = JSON.parse(JSON.stringify(global.get('tray')));\ntrayCopy['postMortem'] = msg.payload;\nvar newMsg = \n{\n    topic: global.get('trayProps').box + '/' + global.get('trayProps').type + '/' + global.get('trayProps').name + '/postMortem',\n    payload: JSON.stringify(trayCopy)\n};\nreturn  newMsg;  \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('lastArchive', new Date().getTime());",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 300,
+        "wires": [
+            [
+                "c8e75c7c8b3d7f8f"
+            ]
+        ]
+    },
+    {
+        "id": "c8e75c7c8b3d7f8f",
+        "type": "mqtt out",
+        "z": "85e21fcb925ef32f",
+        "name": "Publish Post Mortem",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79250bf3.365cc4",
+        "x": 1040,
+        "y": 260,
+        "wires": []
     }
 ]
